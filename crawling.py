@@ -76,7 +76,7 @@ for review in reviews:
     d = {"ID" : review_id, "Rating": rating, "Text": review_text}
     results['test1'].append(d)
 
-with open('test.json', 'a', encoding='utf-8') as f:
+with open('test.json', 'w', encoding='utf-8') as f:
     json.dump(results, f, indent='\t', ensure_ascii=False)
 
 
