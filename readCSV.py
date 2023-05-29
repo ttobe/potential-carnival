@@ -1,8 +1,8 @@
-import os
-import sys
+from crawling import crawling
 
 with open('Data/Restaurant_Link.csv', 'r') as file:
     lines = file.read().split('\n')
+
 name = []
 link = []
 for i in range(len(lines)):
@@ -11,3 +11,6 @@ for i in range(len(lines)):
     link.append(b)
 
 
+for i in range(25, len(lines)):
+    print(name[i], link[i])
+    crawling(name[i], link[i])
