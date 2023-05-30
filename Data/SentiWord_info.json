@@ -1,5 +1,1415 @@
 [
 {
+	"word": "(-;",
+	"word_root": "(",
+	"polarity": "1"
+},
+{
+	"word": "(;_;)",
+	"word_root": "(;_;)",
+	"polarity": "-1"
+},
+{
+	"word": "(^^)",
+	"word_root": "(^^)",
+	"polarity": "1"
+},
+{
+	"word": "(^-^)",
+	"word_root": "(^-^)",
+	"polarity": "1"
+},
+{
+	"word": "(^^*",
+	"word_root": "(",
+	"polarity": "1"
+},
+{
+	"word": "(^_^)",
+	"word_root": "(^_^)",
+	"polarity": "1"
+},
+{
+	"word": "(^_^;",
+	"word_root": "(",
+	"polarity": "-1"
+},
+{
+	"word": "(^o^)",
+	"word_root": "(^o^)",
+	"polarity": "1"
+},
+{
+	"word": "(-_-)",
+	"word_root": "(-_-)",
+	"polarity": "-1"
+},
+{
+	"word": "(T_T)",
+	"word_root": "(T_T)",
+	"polarity": "-1"
+},
+{
+	"word": "(ㅡㅡ)",
+	"word_root": "(",
+	"polarity": "-1"
+},
+{
+	"word": ")-:",
+	"word_root": ")",
+	"polarity": "-1"
+},
+{
+	"word": "*^^*",
+	"word_root": "*",
+	"polarity": "1"
+},
+{
+	"word": "/^o^\\",
+	"word_root": "/",
+	"polarity": "1"
+},
+{
+	"word": ":(",
+	"word_root": ":",
+	"polarity": "1"
+},
+{
+	"word": ":'-(",
+	"word_root": ":",
+	"polarity": "1"
+},
+{
+	"word": ":-(",
+	"word_root": ":",
+	"polarity": "1"
+},
+{
+	"word": ":)",
+	"word_root": ":",
+	"polarity": "-1"
+},
+{
+	"word": ":-)",
+	"word_root": ":",
+	"polarity": "1"
+},
+{
+	"word": ":/",
+	"word_root": ":",
+	"polarity": "-1"
+},
+{
+	"word": ":|",
+	"word_root": ":",
+	"polarity": "1"
+},
+{
+	"word": ":D",
+	"word_root": ":",
+	"polarity": "-1"
+},
+{
+	"word": ":-D",
+	"word_root": ":",
+	"polarity": "-1"
+},
+{
+	"word": ":p",
+	"word_root": ":",
+	"polarity": "0"
+},
+{
+	"word": ":-P",
+	"word_root": ":",
+	"polarity": "-1"
+},
+{
+	"word": ";",
+	"word_root": ";",
+	"polarity": "1"
+},
+{
+	"word": ";)",
+	"word_root": ";",
+	"polarity": "1"
+},
+{
+	"word": ";-)",
+	"word_root": ";",
+	"polarity": "1"
+},
+{
+	"word": ";ㅅ;",
+	"word_root": ";",
+	"polarity": "-1"
+},
+{
+	"word": "^///^",
+	"word_root": "^",
+	"polarity": "1"
+},
+{
+	"word": "^^",
+	"word_root": "^^",
+	"polarity": "1"
+},
+{
+	"word": "^^//",
+	"word_root": "^^",
+	"polarity": "1"
+},
+{
+	"word": "^-^;",
+	"word_root": "^-^;",
+	"polarity": "-1"
+},
+{
+	"word": "^-^;;",
+	"word_root": "^-^;;",
+	"polarity": "-1"
+},
+{
+	"word": "^-^;;;;;",
+	"word_root": "^-^;;;;;",
+	"polarity": "-1"
+},
+{
+	"word": "-_-^",
+	"word_root": "-_-",
+	"polarity": "-1"
+},
+{
+	"word": "<3",
+	"word_root": "<",
+	"polarity": "1"
+},
+{
+	"word": "=)",
+	"word_root": "=",
+	"polarity": "1"
+},
+{
+	"word": "8-)",
+	"word_root": "8",
+	"polarity": "0"
+},
+{
+	"word": "B-)",
+	"word_root": "B",
+	"polarity": "0"
+},
+{
+	"word": "XD",
+	"word_root": "XD",
+	"polarity": "1"
+},
+{
+	"word": "ㄱㅅ",
+	"word_root": "ㄱ",
+	"polarity": "1"
+},
+{
+	"word": "ㄱㅇㄷ",
+	"word_root": "ㄱ",
+	"polarity": "1"
+},
+{
+	"word": "가격이 싸다",
+	"word_root": "가격 싸",
+	"polarity": "1"
+},
+{
+	"word": "가까스로",
+	"word_root": "가까스로",
+	"polarity": "0"
+},
+{
+	"word": "가까이 사귀어",
+	"word_root": "가까이 사귀",
+	"polarity": "1"
+},
+{
+	"word": "가까이하다",
+	"word_root": "가까이",
+	"polarity": "1"
+},
+{
+	"word": "가꾸러뜨리다",
+	"word_root": "가꾸러뜨리",
+	"polarity": "-1"
+},
+{
+	"word": "가꾸러트리다",
+	"word_root": "가꾸러트리",
+	"polarity": "-1"
+},
+{
+	"word": "가난",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난뱅이",
+	"word_root": "가난뱅이",
+	"polarity": "-2"
+},
+{
+	"word": "가난살이",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난살이하다",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난설음",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난에",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난에 쪼들려서",
+	"word_root": "가난 쪼들리",
+	"polarity": "-2"
+},
+{
+	"word": "가난하게",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난하고",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난하고 어렵다",
+	"word_root": "가난 어렵",
+	"polarity": "-2"
+},
+{
+	"word": "가난하고 천한",
+	"word_root": "가난 천한",
+	"polarity": "-2"
+},
+{
+	"word": "가난하다",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난하여",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난한",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가난한 데다가",
+	"word_root": "가난 데",
+	"polarity": "-2"
+},
+{
+	"word": "가난한 사람을",
+	"word_root": "가난 사람",
+	"polarity": "-2"
+},
+{
+	"word": "가난히",
+	"word_root": "가난",
+	"polarity": "-2"
+},
+{
+	"word": "가년스럽다",
+	"word_root": "가년",
+	"polarity": "-2"
+},
+{
+	"word": "가념하다",
+	"word_root": "가념하",
+	"polarity": "-1"
+},
+{
+	"word": "가녕스럽다",
+	"word_root": "가",
+	"polarity": "-2"
+},
+{
+	"word": "가누기 어려워하다",
+	"word_root": "가누 어려워하",
+	"polarity": "-1"
+},
+{
+	"word": "가누지 못하고",
+	"word_root": "가누 못하",
+	"polarity": "-2"
+},
+{
+	"word": "가누지 못하다",
+	"word_root": "가누 못하",
+	"polarity": "-2"
+},
+{
+	"word": "가누지 못할",
+	"word_root": "가누 못하",
+	"polarity": "-2"
+},
+{
+	"word": "가누지 못할 정도로",
+	"word_root": "가누 못하 정도",
+	"polarity": "-2"
+},
+{
+	"word": "가누지 못함",
+	"word_root": "가누 못하",
+	"polarity": "-2"
+},
+{
+	"word": "가눌 수 없게",
+	"word_root": "가누 수 없",
+	"polarity": "-2"
+},
+{
+	"word": "가눌 수 없을",
+	"word_root": "가누 수 없",
+	"polarity": "-2"
+},
+{
+	"word": "가눌 수 없이",
+	"word_root": "가누 수 없이",
+	"polarity": "-2"
+},
+{
+	"word": "가능성이 늘어나다",
+	"word_root": "가능성 늘어나",
+	"polarity": "2"
+},
+{
+	"word": "가능성이 있다고",
+	"word_root": "가능성 있",
+	"polarity": "2"
+},
+{
+	"word": "가능하다",
+	"word_root": "가능",
+	"polarity": "2"
+},
+{
+	"word": "가닐가닐하다",
+	"word_root": "가닐가닐",
+	"polarity": "-1"
+},
+{
+	"word": "가다듬어",
+	"word_root": "가다듬",
+	"polarity": "1"
+},
+{
+	"word": "가다듬어 수습하는",
+	"word_root": "가다듬 수습",
+	"polarity": "1"
+},
+{
+	"word": "가다듬어 수습하다",
+	"word_root": "가다듬 수습",
+	"polarity": "1"
+},
+{
+	"word": "가다듬어 정하다",
+	"word_root": "가다듬 정하",
+	"polarity": "1"
+},
+{
+	"word": "가당찮다",
+	"word_root": "가당찮",
+	"polarity": "-2"
+},
+{
+	"word": "가당찮이",
+	"word_root": "가",
+	"polarity": "-2"
+},
+{
+	"word": "가당히",
+	"word_root": "가",
+	"polarity": "1"
+},
+{
+	"word": "가두거나",
+	"word_root": "가두",
+	"polarity": "-1"
+},
+{
+	"word": "가두거나 해치거나",
+	"word_root": "가두 해치",
+	"polarity": "-2"
+},
+{
+	"word": "가드올려",
+	"word_root": "가드",
+	"polarity": "-1"
+},
+{
+	"word": "가뜬하게",
+	"word_root": "가뜬",
+	"polarity": "1"
+},
+{
+	"word": "가라앉다",
+	"word_root": "가라앉",
+	"polarity": "0"
+},
+{
+	"word": "가라앉지 않은",
+	"word_root": "가라앉 않",
+	"polarity": "0"
+},
+{
+	"word": "가라앉혀 바로잡다",
+	"word_root": "가라앉히 바로잡",
+	"polarity": "1"
+},
+{
+	"word": "가래",
+	"word_root": "가래",
+	"polarity": "-1"
+},
+{
+	"word": "가래 따위가",
+	"word_root": "가래 따위",
+	"polarity": "-1"
+},
+{
+	"word": "가래가",
+	"word_root": "가래",
+	"polarity": "-1"
+},
+{
+	"word": "가래가 섞인",
+	"word_root": "가래 섞이",
+	"polarity": "-1"
+},
+{
+	"word": "가량맞고",
+	"word_root": "가량",
+	"polarity": "-1"
+},
+{
+	"word": "가량맞고 야살스러운",
+	"word_root": "가량 야살",
+	"polarity": "-1"
+},
+{
+	"word": "가량맞고 야살스러움",
+	"word_root": "가량 야살",
+	"polarity": "-1"
+},
+{
+	"word": "가려서 좋아하다",
+	"word_root": "가리 좋아하",
+	"polarity": "-1"
+},
+{
+	"word": "가려운",
+	"word_root": "가렵",
+	"polarity": "-1"
+},
+{
+	"word": "가려운 느낌이",
+	"word_root": "가렵 느낌",
+	"polarity": "-1"
+},
+{
+	"word": "가려운 증상을",
+	"word_root": "가렵 증상",
+	"polarity": "-1"
+},
+{
+	"word": "가련하게",
+	"word_root": "가련",
+	"polarity": "-1"
+},
+{
+	"word": "가련하게 여기다",
+	"word_root": "가련 여기",
+	"polarity": "-1"
+},
+{
+	"word": "가련하게 여김",
+	"word_root": "가련 여기",
+	"polarity": "-1"
+},
+{
+	"word": "가련한",
+	"word_root": "가련",
+	"polarity": "-1"
+},
+{
+	"word": "가련한 듯하다",
+	"word_root": "가련 듯하",
+	"polarity": "-1"
+},
+{
+	"word": "가렵고",
+	"word_root": "가렵",
+	"polarity": "-1"
+},
+{
+	"word": "가로막아서",
+	"word_root": "가로막",
+	"polarity": "-1"
+},
+{
+	"word": "가로채서",
+	"word_root": "가로",
+	"polarity": "-1"
+},
+{
+	"word": "가로채어",
+	"word_root": "가로",
+	"polarity": "-1"
+},
+{
+	"word": "가르치며",
+	"word_root": "가르치",
+	"polarity": "1"
+},
+{
+	"word": "가르침",
+	"word_root": "가르침",
+	"polarity": "1"
+},
+{
+	"word": "가르침을 받아",
+	"word_root": "가르침 받",
+	"polarity": "0"
+},
+{
+	"word": "가리지 못하다",
+	"word_root": "가리 못하",
+	"polarity": "-1"
+},
+{
+	"word": "가리지 않고",
+	"word_root": "가리 않",
+	"polarity": "0"
+},
+{
+	"word": "가마득하다",
+	"word_root": "가마득",
+	"polarity": "-1"
+},
+{
+	"word": "가만있지 못하고",
+	"word_root": "가만있 못하",
+	"polarity": "-1"
+},
+{
+	"word": "가망 없는",
+	"word_root": "가망 없",
+	"polarity": "-1"
+},
+{
+	"word": "가망이 없게",
+	"word_root": "가망 없",
+	"polarity": "-2"
+},
+{
+	"word": "가벼운 마음으로",
+	"word_root": "가벼운 마음",
+	"polarity": "1"
+},
+{
+	"word": "가벼운 말이나",
+	"word_root": "가벼운 말",
+	"polarity": "-1"
+},
+{
+	"word": "가벼운 상처",
+	"word_root": "가벼운 상처",
+	"polarity": "-1"
+},
+{
+	"word": "가벼운 슬픔",
+	"word_root": "가벼운 슬픔",
+	"polarity": "-1"
+},
+{
+	"word": "가벼운 행동으로",
+	"word_root": "가벼운 행동",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게",
+	"word_root": "가볍",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 까부는",
+	"word_root": "가볍 까불",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 까불다",
+	"word_root": "가볍 까불",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 쑤시듯",
+	"word_root": "가볍 쑤시",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 웃다",
+	"word_root": "가볍 웃",
+	"polarity": "1"
+},
+{
+	"word": "가볍게 채신없이",
+	"word_root": "가볍 채신",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 행동하거나",
+	"word_root": "가볍 행동",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 행동하는",
+	"word_root": "가볍 행동",
+	"polarity": "-1"
+},
+{
+	"word": "가볍게 행동하다",
+	"word_root": "가볍 행동",
+	"polarity": "-1"
+},
+{
+	"word": "가볍고",
+	"word_root": "가볍",
+	"polarity": "1"
+},
+{
+	"word": "가볍고 보드랍게",
+	"word_root": "가볍 보드랍",
+	"polarity": "1"
+},
+{
+	"word": "가볍고 상쾌하다",
+	"word_root": "가볍 상쾌",
+	"polarity": "2"
+},
+{
+	"word": "가볍고 상쾌한",
+	"word_root": "가볍 상쾌",
+	"polarity": "2"
+},
+{
+	"word": "가볍고 시원하게",
+	"word_root": "가볍 시원",
+	"polarity": "2"
+},
+{
+	"word": "가볍고 편안하게",
+	"word_root": "가볍 편안",
+	"polarity": "2"
+},
+{
+	"word": "가볍고 환하게",
+	"word_root": "가볍 환하",
+	"polarity": "2"
+},
+{
+	"word": "가분가분",
+	"word_root": "가분가분",
+	"polarity": "1"
+},
+{
+	"word": "가분히",
+	"word_root": "가분",
+	"polarity": "1"
+},
+{
+	"word": "가뿐가뿐",
+	"word_root": "가뿐가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐가뿐하다",
+	"word_root": "가뿐가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐가뿐히",
+	"word_root": "가뿐가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐하게",
+	"word_root": "가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐하다",
+	"word_root": "가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐한",
+	"word_root": "가뿐",
+	"polarity": "1"
+},
+{
+	"word": "가뿐한 느낌",
+	"word_root": "가뿐 느낌",
+	"polarity": "1"
+},
+{
+	"word": "가뿐한 느낌이",
+	"word_root": "가뿐 느낌",
+	"polarity": "1"
+},
+{
+	"word": "가뿐히",
+	"word_root": "가",
+	"polarity": "1"
+},
+{
+	"word": "가쁘게",
+	"word_root": "가쁘",
+	"polarity": "-1"
+},
+{
+	"word": "가쁘게 쉬다",
+	"word_root": "가쁘 쉬",
+	"polarity": "-1"
+},
+{
+	"word": "가쁘고",
+	"word_root": "가쁘",
+	"polarity": "-1"
+},
+{
+	"word": "가쁘고 거칠게",
+	"word_root": "가쁘 거치",
+	"polarity": "-1"
+},
+{
+	"word": "가쁘고 급하게",
+	"word_root": "가쁘 급하",
+	"polarity": "-1"
+},
+{
+	"word": "가쁜",
+	"word_root": "가쁘",
+	"polarity": "-1"
+},
+{
+	"word": "가쁜 증상",
+	"word_root": "가쁘 증상",
+	"polarity": "-1"
+},
+{
+	"word": "가살스럽다",
+	"word_root": "가살",
+	"polarity": "-1"
+},
+{
+	"word": "가소롭게",
+	"word_root": "가소롭",
+	"polarity": "-1"
+},
+{
+	"word": "가소롭다",
+	"word_root": "가소롭",
+	"polarity": "-1"
+},
+{
+	"word": "가스 중독이나",
+	"word_root": "가스 중독",
+	"polarity": "-1"
+},
+{
+	"word": "가슴 아파하다",
+	"word_root": "가슴 아파하",
+	"polarity": "-2"
+},
+{
+	"word": "가슴 아파함",
+	"word_root": "가슴 아파하",
+	"polarity": "-2"
+},
+{
+	"word": "가슴 아프게",
+	"word_root": "가슴 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가슴 아프고",
+	"word_root": "가슴 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가슴 아프다",
+	"word_root": "가슴 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가슴속에 근심이나",
+	"word_root": "가슴속 근심",
+	"polarity": "-2"
+},
+{
+	"word": "가슴앓이",
+	"word_root": "가슴앓이",
+	"polarity": "-2"
+},
+{
+	"word": "가슴앓이하다",
+	"word_root": "가슴앓이",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 갑갑할",
+	"word_root": "가슴 갑갑",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 괴롭거나",
+	"word_root": "가슴 괴롭",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 그득한",
+	"word_root": "가슴 그",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 답답하고",
+	"word_root": "가슴 답답",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 답답하다",
+	"word_root": "가슴 답답",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 답답하며",
+	"word_root": "가슴 답답",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 답답하여",
+	"word_root": "가슴 답답",
+	"polarity": "-1"
+},
+{
+	"word": "가슴이 답답한",
+	"word_root": "가슴 답답",
+	"polarity": "-1"
+},
+{
+	"word": "가슴이 답답해진다",
+	"word_root": "가슴 답답",
+	"polarity": "-1"
+},
+{
+	"word": "가슴이 아프다",
+	"word_root": "가슴 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 아픈",
+	"word_root": "가슴 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 울렁거리는",
+	"word_root": "가슴 울렁거리",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 울렁거리다",
+	"word_root": "가슴 울렁거리",
+	"polarity": "-2"
+},
+{
+	"word": "가슴이 찢어질",
+	"word_root": "가슴 찢어지",
+	"polarity": "-2"
+},
+{
+	"word": "가습이 답답하고",
+	"word_root": "가습 답답",
+	"polarity": "-1"
+},
+{
+	"word": "가엽다",
+	"word_root": "가엽",
+	"polarity": "-1"
+},
+{
+	"word": "가엾게",
+	"word_root": "가엾",
+	"polarity": "-1"
+},
+{
+	"word": "가엾게 여겨",
+	"word_root": "가엾 여기",
+	"polarity": "-1"
+},
+{
+	"word": "가엾게 여기다",
+	"word_root": "가엾 여기",
+	"polarity": "-1"
+},
+{
+	"word": "가엾고",
+	"word_root": "가엾",
+	"polarity": "-1"
+},
+{
+	"word": "가엾고 불쌍하다",
+	"word_root": "가엾 불쌍",
+	"polarity": "-2"
+},
+{
+	"word": "가엾고 불쌍하여",
+	"word_root": "가엾 불쌍",
+	"polarity": "-2"
+},
+{
+	"word": "가엾고 불쌍한",
+	"word_root": "가엾 불쌍",
+	"polarity": "-2"
+},
+{
+	"word": "가엾고 불쌍함",
+	"word_root": "가엾 불쌍",
+	"polarity": "-2"
+},
+{
+	"word": "가엾고 애처롭다",
+	"word_root": "가엾 애처롭",
+	"polarity": "-2"
+},
+{
+	"word": "가엾다",
+	"word_root": "가엾",
+	"polarity": "-1"
+},
+{
+	"word": "가운데에서 뛰어남",
+	"word_root": "가운데 뛰",
+	"polarity": "2"
+},
+{
+	"word": "가위눌리다",
+	"word_root": "가위눌리",
+	"polarity": "-1"
+},
+{
+	"word": "가음 아프고",
+	"word_root": "가 아프",
+	"polarity": "-2"
+},
+{
+	"word": "가장 거룩한",
+	"word_root": "가장 거룩",
+	"polarity": "2"
+},
+{
+	"word": "가장 뛰어나",
+	"word_root": "가장 뛰어나",
+	"polarity": "2"
+},
+{
+	"word": "가장 뛰어난",
+	"word_root": "가장 뛰어나",
+	"polarity": "2"
+},
+{
+	"word": "가장 올바르게",
+	"word_root": "가장 올바르",
+	"polarity": "2"
+},
+{
+	"word": "가장 좋은",
+	"word_root": "가장 좋",
+	"polarity": "2"
+},
+{
+	"word": "가장 중요한",
+	"word_root": "가장 중요",
+	"polarity": "1"
+},
+{
+	"word": "가증맞다",
+	"word_root": "가증",
+	"polarity": "-1"
+},
+{
+	"word": "가증스럽다",
+	"word_root": "가증",
+	"polarity": "-1"
+},
+{
+	"word": "가지런하게 하는",
+	"word_root": "가지런 하",
+	"polarity": "1"
+},
+{
+	"word": "가지런하게 하다",
+	"word_root": "가지런 하다",
+	"polarity": "1"
+},
+{
+	"word": "가지런하다",
+	"word_root": "가지런",
+	"polarity": "1"
+},
+{
+	"word": "가지런하지 아니하다",
+	"word_root": "가지런 아니하",
+	"polarity": "-1"
+},
+{
+	"word": "가지런하지 아니한",
+	"word_root": "가지런 아니하",
+	"polarity": "-1"
+},
+{
+	"word": "가짜",
+	"word_root": "가짜",
+	"polarity": "-2"
+},
+{
+	"word": "가책이 되어",
+	"word_root": "가책 되",
+	"polarity": "-1"
+},
+{
+	"word": "가치",
+	"word_root": "가치",
+	"polarity": "1"
+},
+{
+	"word": "가치 없는",
+	"word_root": "가치 없",
+	"polarity": "-2"
+},
+{
+	"word": "가치 있는",
+	"word_root": "가치 있",
+	"polarity": "2"
+},
+{
+	"word": "가치 있다",
+	"word_root": "가치 있",
+	"polarity": "2"
+},
+{
+	"word": "가치가",
+	"word_root": "가치",
+	"polarity": "1"
+},
+{
+	"word": "가치가 없다",
+	"word_root": "가치 없",
+	"polarity": "-2"
+},
+{
+	"word": "가치가 없을",
+	"word_root": "가치 없",
+	"polarity": "-2"
+},
+{
+	"word": "가치가 없이",
+	"word_root": "가치 없이",
+	"polarity": "-2"
+},
+{
+	"word": "가치가 있다",
+	"word_root": "가치 있",
+	"polarity": "2"
+},
+{
+	"word": "가치를 믿다",
+	"word_root": "가치 믿",
+	"polarity": "2"
+},
+{
+	"word": "가치를 인정하다",
+	"word_root": "가치 인정",
+	"polarity": "2"
+},
+{
+	"word": "가치보다 비싼",
+	"word_root": "가치 비싸",
+	"polarity": "-1"
+},
+{
+	"word": "가치없는",
+	"word_root": "가치",
+	"polarity": "-2"
+},
+{
+	"word": "가치있는",
+	"word_root": "가치",
+	"polarity": "1"
+},
+{
+	"word": "가치작거리는",
+	"word_root": "가치",
+	"polarity": "-1"
+},
+{
+	"word": "가치작거리는 모양",
+	"word_root": "가치 모양",
+	"polarity": "-1"
+},
+{
+	"word": "가치작거리는 소리",
+	"word_root": "가치 소리",
+	"polarity": "-1"
+},
+{
+	"word": "가탈스럽다",
+	"word_root": "가탈",
+	"polarity": "-1"
+},
+{
+	"word": "가혹하게",
+	"word_root": "가혹",
+	"polarity": "-2"
+},
+{
+	"word": "가혹하게 착취하여",
+	"word_root": "가혹 착취",
+	"polarity": "-2"
+},
+{
+	"word": "각근하지 못하여",
+	"word_root": "각근하 못하",
+	"polarity": "-1"
+},
+{
+	"word": "각별나다",
+	"word_root": "각별나",
+	"polarity": "1"
+},
+{
+	"word": "각별하다",
+	"word_root": "각별",
+	"polarity": "1"
+},
+{
+	"word": "간 장애",
+	"word_root": "간 장애",
+	"polarity": "-2"
+},
+{
+	"word": "간 질환의",
+	"word_root": "간 질환",
+	"polarity": "-1"
+},
+{
+	"word": "간드러진",
+	"word_root": "간드러지",
+	"polarity": "2"
+},
+{
+	"word": "간드러진 느낌이",
+	"word_root": "간드러지 느낌",
+	"polarity": "2"
+},
+{
+	"word": "간사스럽게",
+	"word_root": "간사",
+	"polarity": "-1"
+},
+{
+	"word": "간사스럽게 행동하는",
+	"word_root": "간사 행동",
+	"polarity": "-1"
+},
+{
+	"word": "간사스럽게 행동하다",
+	"word_root": "간사 행동",
+	"polarity": "-1"
+},
+{
+	"word": "간사하고",
+	"word_root": "간사",
+	"polarity": "-1"
+},
+{
+	"word": "간사하다",
+	"word_root": "간사",
+	"polarity": "-1"
+},
+{
+	"word": "간사한",
+	"word_root": "간사",
+	"polarity": "-1"
+},
+{
+	"word": "간사한 사람이나",
+	"word_root": "간사 사람",
+	"polarity": "-1"
+},
+{
+	"word": "간사한 짓을",
+	"word_root": "간사 짓",
+	"polarity": "-2"
+},
+{
+	"word": "간섭받고",
+	"word_root": "간섭",
+	"polarity": "-1"
+},
+{
+	"word": "간섭하거나",
+	"word_root": "간섭",
+	"polarity": "-1"
+},
+{
+	"word": "간섭하거나 방해하여",
+	"word_root": "간섭 방해",
+	"polarity": "-1"
+},
+{
+	"word": "간섭하고",
+	"word_root": "간섭",
+	"polarity": "-1"
+},
+{
+	"word": "간섭하다",
+	"word_root": "간섭",
+	"polarity": "-1"
+},
+{
+	"word": "간섭하여",
+	"word_root": "간섭",
+	"polarity": "-1"
+},
+{
+	"word": "간신히 짜내는",
+	"word_root": "간신히 짜내",
+	"polarity": "-1"
+},
+{
+	"word": "간절하다",
+	"word_root": "간절",
+	"polarity": "2"
+},
+{
+	"word": "간지러워서",
+	"word_root": "간지럽",
+	"polarity": "-1"
+},
+{
+	"word": "간지럽게",
+	"word_root": "간지럽",
+	"polarity": "-1"
+},
+{
+	"word": "간지럽고",
+	"word_root": "간지럽",
+	"polarity": "-1"
+},
+{
+	"word": "간지럽고 자릿한",
+	"word_root": "간지럽 자릿",
+	"polarity": "-1"
+},
+{
+	"word": "간직하다",
+	"word_root": "간직",
+	"polarity": "1"
+},
+{
+	"word": "간직하지 아니하고",
+	"word_root": "간직 아니하",
+	"polarity": "-1"
+},
+{
+	"word": "간질",
+	"word_root": "간질",
+	"polarity": "-1"
+},
+{
+	"word": "간질간질하다",
+	"word_root": "간질간질",
+	"polarity": "-1"
+},
+{
+	"word": "간질간질한",
+	"word_root": "간질",
+	"polarity": "-1"
+},
+{
+	"word": "간질간질한 느낌",
+	"word_root": "간질 느낌",
+	"polarity": "-1"
+},
+{
+	"word": "간편하거나",
+	"word_root": "간편",
+	"polarity": "2"
+},
+{
+	"word": "간편하다",
+	"word_root": "간편",
+	"polarity": "2"
+},
+{
+	"word": "갈강병균이",
+	"word_root": "갈강병",
+	"polarity": "-1"
+},
+{
+	"word": "갈라서다",
+	"word_root": "가르",
+	"polarity": "-1"
+},
+{
+	"word": "갈라지는 피부병",
+	"word_root": "갈라지 피부병",
+	"polarity": "-1"
+},
+{
+	"word": "갈색굳음병",
+	"word_root": "갈색",
+	"polarity": "-1"
+},
+{
+	"word": "갈증이 나고",
+	"word_root": "갈증 나",
+	"polarity": "-1"
+},
+{
+	"word": "갈증이 심하게",
+	"word_root": "갈증 심하",
+	"polarity": "-1"
+},
+{
+	"word": "갈팡질팡",
+	"word_root": "갈팡질팡",
+	"polarity": "-1"
+},
+{
 	"word": "갈팡질팡하다",
 	"word_root": "갈팡질팡",
 	"polarity": "-1"
@@ -35,9 +1445,24 @@
 	"polarity": "-1"
 },
 {
+	"word": "감각이 둔하고",
+	"word_root": "감각 둔하",
+	"polarity": "-1"
+},
+{
+	"word": "감각이 마비되고",
+	"word_root": "감각 마비",
+	"polarity": "-1"
+},
+{
 	"word": "감각적이다",
 	"word_root": "감각적",
 	"polarity": "1"
+},
+{
+	"word": "감감히",
+	"word_root": "감감",
+	"polarity": "-1"
 },
 {
 	"word": "감개무량하다",
@@ -88,6 +1513,46 @@
 	"word": "감금하여",
 	"word_root": "감금",
 	"polarity": "-2"
+},
+{
+	"word": "감기",
+	"word_root": "감기",
+	"polarity": "-1"
+},
+{
+	"word": "감기가",
+	"word_root": "감기",
+	"polarity": "-1"
+},
+{
+	"word": "감기가 들어",
+	"word_root": "감기 듣",
+	"polarity": "-1"
+},
+{
+	"word": "감기나",
+	"word_root": "감기",
+	"polarity": "-1"
+},
+{
+	"word": "감기나 천식",
+	"word_root": "감기 천식",
+	"polarity": "-1"
+},
+{
+	"word": "감기로",
+	"word_root": "감기",
+	"polarity": "-1"
+},
+{
+	"word": "감기로 인하여",
+	"word_root": "감기 인하",
+	"polarity": "-1"
+},
+{
+	"word": "감당하다",
+	"word_root": "감당",
+	"polarity": "1"
 },
 {
 	"word": "감동",
@@ -175,8 +1640,28 @@
 	"polarity": "2"
 },
 {
+	"word": "감모",
+	"word_root": "감모",
+	"polarity": "1"
+},
+{
 	"word": "감미롭다",
 	"word_root": "감미롭",
+	"polarity": "2"
+},
+{
+	"word": "감병",
+	"word_root": "감병",
+	"polarity": "-1"
+},
+{
+	"word": "감복하다",
+	"word_root": "감복",
+	"polarity": "2"
+},
+{
+	"word": "감복하여",
+	"word_root": "감복",
 	"polarity": "2"
 },
 {
@@ -203,6 +1688,26 @@
 	"word": "감사하다",
 	"word_root": "감사",
 	"polarity": "2"
+},
+{
+	"word": "감싸고",
+	"word_root": "감싸",
+	"polarity": "1"
+},
+{
+	"word": "감싸고 달래다",
+	"word_root": "감싸 달래",
+	"polarity": "0"
+},
+{
+	"word": "감옥",
+	"word_root": "감옥",
+	"polarity": "-1"
+},
+{
+	"word": "감옥에",
+	"word_root": "감옥",
+	"polarity": "-1"
 },
 {
 	"word": "감정 사납게",
@@ -285,6 +1790,16 @@
 	"polarity": "2"
 },
 {
+	"word": "갑갑궁금하다",
+	"word_root": "갑갑궁금하",
+	"polarity": "-1"
+},
+{
+	"word": "갑갑하고 궁금하다",
+	"word_root": "갑갑 궁금",
+	"polarity": "-1"
+},
+{
 	"word": "갑갑하다",
 	"word_root": "갑갑",
 	"polarity": "-1"
@@ -320,6 +1835,41 @@
 	"polarity": "-1"
 },
 {
+	"word": "갑자기 게우는",
+	"word_root": "갑자기 게우",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 놀라거나",
+	"word_root": "갑자기 놀라",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 놀라서",
+	"word_root": "갑자기 놀라",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 무섭거나",
+	"word_root": "갑자기 무섭",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 분별없이",
+	"word_root": "갑자기 분별",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 서늘한",
+	"word_root": "갑자기 서늘",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 서늘한서늘한 느낌이",
+	"word_root": "갑자기 서늘 느낌",
+	"polarity": "-1"
+},
+{
 	"word": "갑자기 성을",
 	"word_root": "갑자기 성",
 	"polarity": "-1"
@@ -327,6 +1877,26 @@
 {
 	"word": "갑자기 소란스럽게",
 	"word_root": "갑자기 소란",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 소름이",
+	"word_root": "갑자기 소름",
+	"polarity": "-1"
+},
+{
+	"word": "갑자기 어지러워",
+	"word_root": "갑자기 어지럽",
+	"polarity": "-1"
+},
+{
+	"word": "갑작스러워 두렵거나",
+	"word_root": "갑작스럽 두렵",
+	"polarity": "-1"
+},
+{
+	"word": "갑작스럽게 화를",
+	"word_root": "갑작스럽 화",
 	"polarity": "-1"
 },
 {
@@ -340,14 +1910,84 @@
 	"polarity": "2"
 },
 {
+	"word": "강간죄",
+	"word_root": "강간죄",
+	"polarity": "-2"
+},
+{
+	"word": "강개무량",
+	"word_root": "강개",
+	"polarity": "-2"
+},
+{
+	"word": "강개무량하다",
+	"word_root": "강개",
+	"polarity": "-2"
+},
+{
+	"word": "강구하다",
+	"word_root": "강구",
+	"polarity": "0"
+},
+{
+	"word": "강도가",
+	"word_root": "강도",
+	"polarity": "-1"
+},
+{
+	"word": "강등하여",
+	"word_root": "강",
+	"polarity": "-1"
+},
+{
 	"word": "강렬하게",
 	"word_root": "강렬",
 	"polarity": "1"
 },
 {
+	"word": "강박",
+	"word_root": "강박",
+	"polarity": "-1"
+},
+{
+	"word": "강박하여",
+	"word_root": "강박",
+	"polarity": "-1"
+},
+{
+	"word": "강세",
+	"word_root": "강세",
+	"polarity": "1"
+},
+{
+	"word": "강인하다",
+	"word_root": "강인",
+	"polarity": "1"
+},
+{
+	"word": "강인한",
+	"word_root": "강인",
+	"polarity": "2"
+},
+{
 	"word": "강제로",
 	"word_root": "강제",
 	"polarity": "-1"
+},
+{
+	"word": "강제로 누르는",
+	"word_root": "강제 누르",
+	"polarity": "-1"
+},
+{
+	"word": "강제로 누르다",
+	"word_root": "강제 누르",
+	"polarity": "-2"
+},
+{
+	"word": "강제로 누름",
+	"word_root": "강제 누르",
+	"polarity": "-2"
 },
 {
 	"word": "강제로 빼앗는",
@@ -420,9 +2060,49 @@
 	"polarity": "1"
 },
 {
+	"word": "강하고 야무지게",
+	"word_root": "강하 야무지",
+	"polarity": "2"
+},
+{
+	"word": "강하고 야무지다",
+	"word_root": "강하 야무지",
+	"polarity": "2"
+},
+{
+	"word": "강하고 튼튼하게",
+	"word_root": "강하 튼튼",
+	"polarity": "2"
+},
+{
+	"word": "강하다",
+	"word_root": "강하",
+	"polarity": "1"
+},
+{
 	"word": "강한 비판이나",
 	"word_root": "강 비판",
 	"polarity": "-2"
+},
+{
+	"word": "강한 충격을",
+	"word_root": "강 충격",
+	"polarity": "-1"
+},
+{
+	"word": "강화하다",
+	"word_root": "강화",
+	"polarity": "1"
+},
+{
+	"word": "갖지 아니하게",
+	"word_root": "갖 아니하",
+	"polarity": "-1"
+},
+{
+	"word": "갖추다",
+	"word_root": "갖추",
+	"polarity": "1"
 },
 {
 	"word": "갖추지 못한",
@@ -457,6 +2137,16 @@
 {
 	"word": "갚지 않다",
 	"word_root": "갚 않",
+	"polarity": "-1"
+},
+{
+	"word": "개가 무섭거나",
+	"word_root": "개가 무섭",
+	"polarity": "-1"
+},
+{
+	"word": "개가 아프거나",
+	"word_root": "개가 아프",
 	"polarity": "-1"
 },
 {
@@ -627,6 +2317,36 @@
 {
 	"word": "거듭 따뜻이",
 	"word_root": "거들 따뜻이",
+	"polarity": "2"
+},
+{
+	"word": "거듭 죄를",
+	"word_root": "거들 죄",
+	"polarity": "-1"
+},
+{
+	"word": "거뜬하다",
+	"word_root": "거뜬",
+	"polarity": "2"
+},
+{
+	"word": "거래가 금지된",
+	"word_root": "거래 금지",
+	"polarity": "-1"
+},
+{
+	"word": "거룩한",
+	"word_root": "거룩",
+	"polarity": "2"
+},
+{
+	"word": "거룩한 모습",
+	"word_root": "거룩 모습",
+	"polarity": "2"
+},
+{
+	"word": "거룩한 사람",
+	"word_root": "거룩 사람",
 	"polarity": "2"
 },
 {
@@ -10545,11 +12265,6 @@
 	"polarity": "-2"
 },
 {
-	"word": "내팽개치다",
-	"word_root": "내팽개",
-	"polarity": "-2"
-},
-{
 	"word": "내키지 아니하거나",
 	"word_root": "내키 아니하",
 	"polarity": "-1"
@@ -14753,11 +16468,6 @@
 	"word": "드센",
 	"word_root": "드세",
 	"polarity": "-1"
-},
-{
-	"word": "득점",
-	"word_root": "득점",
-	"polarity": "2"
 },
 {
 	"word": "득템",
@@ -29005,11 +30715,6 @@
 	"polarity": "-2"
 },
 {
-	"word": "불안증",
-	"word_root": "불안증",
-	"polarity": "-2"
-},
-{
 	"word": "불안스럽다",
 	"word_root": "불안",
 	"polarity": "-2"
@@ -32313,16 +34018,6 @@
 	"word": "상심하다",
 	"word_root": "상심",
 	"polarity": "-2"
-},
-{
-	"word": "상위",
-	"word_root": "상위",
-	"polarity": "2"
-},
-{
-	"word": "상위권",
-	"word_root": "상위권",
-	"polarity": "2"
 },
 {
 	"word": "상처",
@@ -36777,12 +38472,12 @@
 {
 	"word": "승리",
 	"word_root": "승리",
-	"polarity": "2"
+	"polarity": "-2"
 },
 {
 	"word": "승리하다",
 	"word_root": "승리",
-	"polarity": "2"
+	"polarity": "-2"
 },
 {
 	"word": "시각적 아름다움을",
@@ -38043,11 +39738,6 @@
 	"word": "실용적인",
 	"word_root": "실용적",
 	"polarity": "2"
-},
-{
-	"word": "실점",
-	"word_root": "실점",
-	"polarity": "-2"
 },
 {
 	"word": "실제로 이루다",
@@ -41376,11 +43066,6 @@
 },
 {
 	"word": "안정",
-	"word_root": "안정",
-	"polarity": "1"
-},
-{
-	"word": "안정감",
 	"word_root": "안정",
 	"polarity": "1"
 },
@@ -46450,11 +48135,6 @@
 	"polarity": "-2"
 },
 {
-	"word": "오류",
-	"word_root": "오류",
-	"polarity": "-2"
-},
-{
 	"word": "오르지 못하던",
 	"word_root": "오르 못하",
 	"polarity": "-1"
@@ -49357,7 +51037,7 @@
 {
 	"word": "유명하다",
 	"word_root": "유명",
-	"polarity": "1"
+	"polarity": "-2"
 },
 {
 	"word": "유명한",
@@ -50368,11 +52048,6 @@
 	"word": "의합하다",
 	"word_root": "의합하",
 	"polarity": "2"
-},
-{
-	"word": "의혹",
-	"word_root": "의혹",
-	"polarity": "-1"
 },
 {
 	"word": "의회",
@@ -54607,7 +56282,7 @@
 {
 	"word": "적극적이다",
 	"word_root": "적극적",
-	"polarity": "1"
+	"polarity": "-1"
 },
 {
 	"word": "적극적인",
@@ -69202,11 +70877,6 @@
 {
 	"word": "획기적인",
 	"word_root": "획기적",
-	"polarity": "-2"
-},
-{
-	"word": "횡령",
-	"word_root": "횡령",
 	"polarity": "-2"
 },
 {

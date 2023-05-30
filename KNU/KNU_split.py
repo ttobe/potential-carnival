@@ -9,9 +9,9 @@ path = 'KNU/KnuSentiLex-master/data/SentiWord_info.json'
 
 with open(path, 'r', encoding="UTF-8") as file:
     data = json.load(file)
-    
+print(len(data))
 # 14853 {'word': '알쏭달쏭하다', 'word_root': '알쏭달쏭', 'polarity': '-1'}
-for i in range(100):
+for i in range(len(data)):
     json_path = ''
     word = data[i]['word']
     word_root = data[i]['word_root']
@@ -35,7 +35,5 @@ for i in range(100):
     with open(json_path, 'a', encoding='utf-8') as category_file:
         json.dump(data[i], category_file, indent='\t', ensure_ascii=False)
         category_file.write('\n,')
-
-    # plor = int(input('극성 입력: '))
 
     
