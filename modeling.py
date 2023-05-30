@@ -1,29 +1,30 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 # 데이터 프레임 전체에 scaling 적용
-from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import mean_squared_error
 import numpy as np
 
 # 파일 읽기
-path = 'Data/result_final_with_ratings.csv'
+path = 'Data/float_ratings.csv'
 df = pd.read_csv(path)
-
+df.info()
 df_x = df.drop(columns=['rating'])
-df_y = df['rating']
+df_y = df['rating'].values
+# print(df_y)
 
 # print(df_x)
 x_train, x_test, y_train, y_test = train_test_split(df_x, df_y, test_size=0.2, random_state=37)
 
-
+from sklearn.preprocessing import StandardScaler
 # 스케일링
 std = StandardScaler()
 std.fit(df_x)
 df_x_scaled = std.transform(df_x)
-# print(df_x_scaled)
+# df_y.info()
 x_train, x_test, y_train, y_test = train_test_split(df_x_scaled, df_y, test_size=0.2, random_state=37)
+
 
 # mms = MinMaxScaler()
 # mms.fit(df_x)
@@ -31,40 +32,36 @@ x_train, x_test, y_train, y_test = train_test_split(df_x_scaled, df_y, test_size
 # print(df_x_scaled)
 # x_train, x_test, y_train, y_test = train_test_split(df_x_scaled, df_y, test_size=0.2, random_state=37)
 
-# print(x_train.shape , y_train.shape)
+print(x_train.shape , y_train.shape)
 
-from sklearn.neighbors import KNeighborsClassifier
-for k in range(1, 11):
-    knn = KNeighborsClassifier(n_neighbors=k, n_jobs=-1)
-    knn.fit(x_train, y_train)
-    score = knn.score(x_test, y_test)
-    print('k: %d, accuracy: %.2f' % (k, score*100))
+# from sklearn.neighbors import KNeighborsClassifier
+# for k in range(1, 11):
+#     knn = KNeighborsClassifier(n_neighbors=k, n_jobs=-1)
+#     knn.fit(x_train, y_train)
+#     score = knn.score(x_test, y_test)
+#     print('k: %d, accuracy: %.2f' % (k, score*100))
 
 
 print("---------------")
 print("LinearRegression")
 
 from sklearn.linear_model import LinearRegression
-
 model = LinearRegression()
 model.fit(x_train, y_train)
-print("훈련세트 점수: {:.2f}".format( model.score(x_train, y_train) ))
-print("테스트세트 점수: {:.2f}".format(model.score(x_test, y_test) ))
-
 pred = model.predict(x_test)
 rmse = np.sqrt(mean_squared_error(y_test,pred))
-print("mse: ", rmse)
+print("RMSE: ", rmse)
 
-print("---------------")
-print("DecisionTreeClassifier")
+# print("---------------")
+# print("DecisionTreeClassifier")
 
-dtc = DecisionTreeClassifier()
-dtc.fit(x_train, y_train)
-# print('모델의 정확도 :', round(dtc.score(x_test, y_test), 4))
+# dtc = DecisionTreeClassifier()
+# dtc.fit(x_train, y_train)
+# # print('모델의 정확도 :', round(dtc.score(x_test, y_test), 4))
 
-pred = dtc.predict(x_test)
-rmse = np.sqrt(mean_squared_error(y_test,pred))
-print("Rmse: ", rmse)
+# pred = dtc.predict(x_test)
+# rmse = np.sqrt(mean_squared_error(y_test,pred))
+# print("Rmse: ", rmse)
 
 
 print("---------------")
@@ -98,7 +95,13 @@ xgboost.plot_importance(xgb_model)
 pred = xgb_model.predict(x_test)
 
 r_sq = xgb_model.score(x_train, y_train)
+# print(pred[0])
+# print(y_test)
+# for i in range(5):
+#     print("Predict: % f" %(pred[i]), end=' ')
+#     print("Answer: ", y_test[i])
+
 mse = np.sqrt(mean_squared_error(y_test, pred))
-print("Test RMSE : % f" %(mse))
-print("R2 score ",r_sq)
-print(explained_variance_score(pred,y_test))
+print("RMSE : % f" %(mse))
+# print("R2 score ",r_sq)
+# print(explained_variance_score(pred,y_test))

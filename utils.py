@@ -79,7 +79,7 @@ def insertRating():
     for i in range(len(json_list)):
         with open(json_list[i], 'r') as json_file:
             data = json.load(json_file)        
-            tmp_ratings.append(data['restaurant_ratings'][0])
+            tmp_ratings.append(data['restaurant_ratings'][0]/10)
 
     import pandas as pd
 
@@ -93,6 +93,6 @@ def insertRating():
     df['rating'] = tmp_ratings
 
     # 결과를 새로운 CSV 파일로 저장
-    df.to_csv('result_final_with_ratings.csv', index=False)
+    df.to_csv('float_ratings.csv', index=False)
 
 insertRating()
