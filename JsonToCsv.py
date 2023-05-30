@@ -17,10 +17,12 @@ for i in range(len(file_list)):
 
 for i in range(len(file_list)):
 
-    # JSON 파일 읽기
+    # JSON 파일 경로
     open_path = file_list[i]
+    # 이게 있으면 그냥 넘기기
     if open_path == 'Data/reviews/csv':
         continue
+    # 파일 열기
     with open(open_path, 'r') as json_file:
         data = json.load(json_file)
 

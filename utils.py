@@ -60,5 +60,39 @@ def removeBlanks():
             # 수정된 내용을 원래 파일에 덮어쓰기
             filtered_df.to_csv(file_path, index=False, encoding='utf-8')
 
-result_file = 'Data/results.csv'
 
+def insertRating():
+    # data 폴더 경로 설정
+    data_folder = 'Data/reviews/json'
+
+    # data 폴더 내의 파일 리스트 가져오기
+    json_list = os.listdir(data_folder)
+
+    # 상대경로 합치기
+    for i in range(len(json_list)):
+        json_list[i] = os.path.join(data_folder, json_list[i])
+
+    # 정렬
+    json_list.sort()
+
+    tmp_ratings = []
+    for i in range(len(json_list)):
+        with open(json_list[i], 'r') as json_file:
+            data = json.load(json_file)        
+            tmp_ratings.append(data['restaurant_ratings'][0])
+
+    import pandas as pd
+
+    # 쓸 파일 경로
+    result_file = 'Data/results_final.csv'
+
+    # 파일 읽기
+    df = pd.read_csv(result_file)
+
+    # rating 열에 tmp_ratings 배열 값 삽입
+    df['rating'] = tmp_ratings
+
+    # 결과를 새로운 CSV 파일로 저장
+    df.to_csv('result_final_with_ratings.csv', index=False)
+
+insertRating()
