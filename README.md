@@ -9,6 +9,12 @@
 XGB Regressor Test값 Predict/Y_test   
 <img width="1487" alt="스크린샷 2023-06-03 오전 11 11 11" src="https://github.com/ttobe/potential-carnival/assets/101859033/13de822f-8d19-45fb-a684-1d1633c6034b">
 
+result/
+df.csv: 음식점과 네이버 링크
+kakao_rating.txt: 카카오 별점
+predicted.txt: 예측한 별점
+reviews_i.txt: 네이버 리뷰 모음
+
 참고:   
 Rating Prediction by Evaluation Item through Sentiment Analysis of Restaurant Review(http://koreascience.or.kr/article/JAKO202018955008652.page)   
 트립어드바이저(https://www.tripadvisor.co.kr/)   
