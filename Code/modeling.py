@@ -12,18 +12,26 @@ df = pd.read_csv(path)
 df.info()
 df_x = df.drop(columns=['rating'])
 df_y = df['rating'].values
-# print(df_y)
 
-# print(df_x)
-x_train, x_test, y_train, y_test = train_test_split(df_x, df_y, test_size=0.2, random_state=37)
-
+naver_path = 'Data/results_naver.csv'
+df_naver = pd.read_csv(naver_path)
+df_naver.info()
 from sklearn.preprocessing import StandardScaler
 # 스케일링
 std = StandardScaler()
 std.fit(df_x)
 df_x_scaled = std.transform(df_x)
+std.fit(df_naver)
+df_test_scaled = std.transform(df_naver)
+scaler = MinMaxScaler(feature_range=(0, 6))
+
+# 데이터 스케일링
+scaled_y = scaler.fit_transform(df_y.reshape(-1, 1))
+scaled_y = scaled_y.ravel()
+print("---------------")
+print(scaled_y)
 # df_y.info()
-x_train, x_test, y_train, y_test = train_test_split(df_x_scaled, df_y, test_size=0.2, random_state=37)
+x_train, x_test, y_train, y_test = train_test_split(df_x_scaled, scaled_y, test_size=0.3, random_state=37)
 
 
 # mms = MinMaxScaler()
@@ -51,6 +59,10 @@ model.fit(x_train, y_train)
 pred = model.predict(x_test)
 rmse = np.sqrt(mean_squared_error(y_test,pred))
 print("RMSE: ", rmse)
+import joblib
+joblib.dump(model, './model/linear.pkl')
+preds = model.predict(df_test_scaled)
+
 
 # print("---------------")
 # print("DecisionTreeClassifier")
@@ -69,13 +81,14 @@ print("RandomForestRegressor")
 
 from sklearn.ensemble import RandomForestRegressor
 
-forest_reg = RandomForestRegressor()
+forest_reg = RandomForestRegressor(n_estimators=100)
 forest_reg.fit(x_train, y_train)
 housing_predictions = forest_reg.predict(x_test)
 forest_mse = mean_squared_error(y_test, housing_predictions)
 forest_rmse = np.sqrt(forest_mse)
 print("Rmse: ", forest_rmse)
-
+preds = forest_reg.predict(df_test_scaled)
+print(preds)
 
 
 import pandas as pd
@@ -105,3 +118,9 @@ mse = np.sqrt(mean_squared_error(y_test, pred))
 print("RMSE : % f" %(mse))
 # print("R2 score ",r_sq)
 # print(explained_variance_score(pred,y_test))
+preds = xgb_model.predict(df_test_scaled)
+print(preds)
+preds_str = [str(value) for value in preds]
+result = ",".join(preds_str)
+with open("./predicted.txt", "w") as file:
+    file.write(result)
