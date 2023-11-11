@@ -7,13 +7,13 @@ from sklearn.metrics import mean_squared_error
 import numpy as np
 
 # 파일 읽기
-path = 'Data/float_ratings.csv'
+path = '../Data/float_ratings.csv'
 df = pd.read_csv(path)
 df.info()
 df_x = df.drop(columns=['rating'])
 df_y = df['rating'].values
 
-naver_path = 'Data/results_naver.csv'
+naver_path = '../Data/results_naver.csv'
 df_naver = pd.read_csv(naver_path)
 df_naver.info()
 from sklearn.preprocessing import StandardScaler
@@ -58,9 +58,9 @@ model = LinearRegression()
 model.fit(x_train, y_train)
 pred = model.predict(x_test)
 rmse = np.sqrt(mean_squared_error(y_test,pred))
-print("RMSE: ", rmse)
-import joblib
-joblib.dump(model, './model/linear.pkl')
+# print("RMSE: ", rmse)
+# import joblib
+# joblib.dump(model, './model/linear.pkl')
 preds = model.predict(df_test_scaled)
 
 
