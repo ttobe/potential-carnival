@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:24px;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.input-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 4px;
+}
+
+.after-sign-up{
+    display: none;
+}
+
+.sign-in-button{
+    background-color: skyblue;
+}
+
+.log-in-button{
+    background-color: skyblue;
+    display: none;
+}
+
+.after-sign-up{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.log-in-button{
+    background-color: skyblue;
+}

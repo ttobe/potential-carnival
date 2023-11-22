@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="nav">
+        <div class="hello-web">HELLO. WEB!</div>
+        <div class="frame-1" id="frame-1">
+            <div class="button-small" id="loginout"><a href="/user/login.html">로그인/회원가입</a></div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="category">부스트캠프 백엔드 교육용 페이지</div>
+        <div class="title">HELLO, WEB! 입니다.</div>
+    </div>
+
+    <div class="post-table">
+        <div class="post-count">전체 글 60개</div>
+        <div class="table">
+            <div class="post-table-elements">
+                <div class="line"></div>
+                <div class="text">
+                    <div class="title">제목</div>
+                    <div class="writer">작성자</div>
+                    <div class="date">작성일자</div>
+                    <div class="view">조회수</div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div id="post-start">
+                {{#each json}}
+                <div class="post-table-elements2">
+                    <div class="text2">
+                        <div class="title2" onclick="location.href='/board/detail/?pk={{pk}}';">
+                            <div class="text3">{{title}}</div>
+                        </div>
+                        <div class="writer2">{{nickname}}</div>
+                        <div class="date2">{{registertime}}</div>
+                        <div class="view2">{{view}}</div>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        <div class="feature">
+            <div class="pagenation">
+                <svg class="icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 18.5L9 12.5L15 6.5" stroke="#D2DAE0" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <div class="post-count2">1</div>
+                <div class="post-count3">2</div>
+                <div class="post-count3">3</div>
+                <div class="post-count3">4</div>
+                <div class="post-count3">5</div>
+                <svg class="icon2" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 18.5L15 12.5L9 6.5" stroke="#4362D0" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-small" id="write"><a href="/user/write">글쓰기</a></div>
+
+</body>
+
+</html>

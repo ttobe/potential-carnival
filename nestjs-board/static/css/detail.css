@@ -1,0 +1,219 @@
+.post-detail,
+.post-detail * {
+  box-sizing: border-box;
+}
+.post-detail {
+  background: var(--white, #ffffff);
+  padding: 0px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  position: relative;
+}
+.nav {
+  flex-shrink: 0;
+  width: 1040px;
+  height: 64px;
+  position: relative;
+}
+.frame-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  top: calc(50% - 15px);
+}
+.nav-list {
+  color: var(--gray-300, #4b5966);
+  text-align: center;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.button-small {
+  background: var(--primary, #4362d0);
+  border-radius: 8px;
+  padding: 8px 16px 8px 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: 32px;
+  position: relative;
+}
+.text {
+  color: var(--white, #ffffff);
+  text-align: center;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hello-web {
+  color: var(--black, #14212b);
+  text-align: left;
+  font: var(--bold-r, 500 16px/100% "Pretendard", sans-serif);
+  position: absolute;
+  left: 0px;
+  top: calc(50% - 8px);
+}
+.frame-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.post-title {
+  color: var(--black, #14212b);
+  text-align: left;
+  font: var(--display-l, 500 32px "Pretendard", sans-serif);
+  position: relative;
+  width: 680px;
+}
+.post-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.division {
+  background: var(--gray-100, #d2dae0);
+  flex-shrink: 0;
+  width: 680px;
+  height: 1px;
+  position: relative;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.writer {
+  color: var(--gray-200, #879298);
+  text-align: right;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.date {
+  color: var(--gray-200, #879298);
+  text-align: right;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.view {
+  color: var(--gray-200, #879298);
+  text-align: right;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.body {
+  color: var(--black, #14212b);
+  text-align: left;
+  font: var(--body-r, 400 16px/160% "Pretendard", sans-serif);
+  position: relative;
+  width: 680px;
+}
+.comment-counter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.division2 {
+  background: var(--gray-200, #879298);
+  flex-shrink: 0;
+  width: 680px;
+  height: 1px;
+  position: relative;
+}
+.comment-count {
+  color: var(--gray-200, #879298);
+  text-align: right;
+  font: var(--bold-r, 500 16px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.comment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.body2 {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.username {
+  color: var(--primary, #4362d0);
+  text-align: left;
+  font: var(--bold-s, 500 14px/100% "Pretendard", sans-serif);
+  position: relative;
+}
+.text2 {
+  color: var(--black, #14212b);
+  text-align: left;
+  font: var(--body-r, 400 16px/160% "Pretendard", sans-serif);
+  position: relative;
+  width: 680px;
+}
+.date2 {
+  color: var(--gray-200, #879298);
+  text-align: right;
+  font: var(--body-s, 400 14px/160% "Pretendard", sans-serif);
+  position: relative;
+}
+.frame-6 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-shrink: 0;
+  width: 680px;
+  position: relative;
+}
+.frame-7 {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}

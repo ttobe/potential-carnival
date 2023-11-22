@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>간단한 지도 표시하기</title>
+    <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1gssxq45n5"></script>
+    <style>
+        .list,
+        .list * {
+            box-sizing: border-box;
+
+        }
+
+        .list {
+            position: absolute;
+            inset: 0;
+        }
+
+        .list-background {
+            z-index: 2;
+            background: #ffffff;
+            width: 390px;
+            height: 100%;
+            position: absolute;
+            left: 112px;
+            top: 0px;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-list {
+            position: relative;
+            z-index: 333;
+            display: flex;
+            width: 361px;
+            height: 716px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 18px;
+            flex-shrink: 0;
+            /* overflow-x 속성 추가 */
+            overflow-x: hidden;
+            left: 127px;
+            top: 102px;
+        }
+
+        .restaurant {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            gap: 11px;
+            align-items: center;
+            justify-content: center;
+            width: 361px;
+            height: 129px;
+            position: relative;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        }
+
+
+        .thumbnails {
+            background: #c4c4c4;
+            border-radius: 20px;
+            flex-shrink: 0;
+            width: 100px;
+            height: 100px;
+            position: relative;
+        }
+
+        .detail {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            width: 236px;
+            height: 104px;
+            position: relative;
+        }
+
+        .name {
+            color: #3e4958;
+            text-align: left;
+            font: 400 12px/136% "Poppins", sans-serif;
+            position: relative;
+            width: 237px;
+            height: 17px;
+        }
+
+        .ratings {
+            display: flex;
+            flex-direction: row;
+            gap: 4px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .star {
+            border-radius: 0px;
+            flex-shrink: 0;
+            position: relative;
+            overflow: visible;
+        }
+
+        .rating {
+            color: #3e4958;
+            text-align: left;
+            font: 300 15px/136% "Poppins", sans-serif;
+            position: relative;
+            width: 26px;
+            height: 16px;
+        }
+
+        .menu {
+            color: #3e4958;
+            text-align: left;
+            font: 300 15px/136% "Poppins", sans-serif;
+            position: relative;
+        }
+
+        .label {
+            z-index: 2;
+            color: #3e4958;
+            text-align: left;
+            font: 800 36px/28px "Poppins", sans-serif;
+            position: absolute;
+            left: 134px;
+            top: 36px;
+        }
+
+        .sidebar,
+        .sidebar * {
+            box-sizing: border-box;
+        }
+
+        .sidebar {
+            position: absolute;
+            inset: 0;
+
+        }
+
+        .side-background {
+            z-index: 2;
+            background: #ffffff;
+            width: 112px;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .mypage {
+            z-index: 2;
+            position: absolute;
+            left: 45px;
+            top: 829px;
+            overflow: visible;
+        }
+
+        .logo {
+            z-index: 2;
+            color: #000000;
+            text-align: left;
+            font: 600 20px "Poppins", sans-serif;
+            position: absolute;
+            left: 32px;
+            top: 42px;
+        }
+
+        /* 휴대폰을 나타내는 스타일 */
+        .mobile-screen {
+            position: absolute;
+            z-index: 333;
+            width: 390px;
+            height: 100%;
+            position: absolute;
+            left: 502px;
+            top: 0px;
+
+            overflow: hidden;
+            /* 내부 컨텐츠를 휴대폰 영역에 맞게 자르기 */
+        }
+
+        /* iframe 스타일 */
+        .mobile-screen iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            /* iframe 테두리 제거 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="side-background"></div>
+        <svg class="mypage" width="23" height="25" viewBox="0 0 23 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M12.1957 14.3266C11.9043 14.3117 10.9031 14.3266 10.5984 14.3266C7.39258 14.3266 4.39874 15.3202 1.84206 17.0256C0.676318 17.7968 0.000717467 19.2501 0.000717467 20.7776L0 23.8636C0 24.4318 0.511394 24.9999 1.02276 25H13.8641C12.8175 23.3242 12.1957 20.9853 12.1957 18.7756C12.1957 17.1888 11.6394 15.6761 12.1957 14.3266Z"
+                fill="#8E8E93" />
+            <path
+                d="M8.89042 14.8099C9.18186 14.795 11.5969 14.3266 11.9016 14.3266C15.1074 14.3266 18.1012 15.3202 20.6579 17.0257C21.8237 17.7968 22.4993 19.2502 22.4993 20.7777L22.5 23.8636C22.5 24.4318 21.9886 25 21.4773 25H8.63591C9.68243 23.3242 10.3042 20.9853 10.3042 18.7756C10.3042 17.1888 9.4468 16.1594 8.89042 14.8099Z"
+                fill="#8E8E93" />
+            <path
+                d="M11.4307 12.983C14.6586 12.983 17.273 10.078 17.273 6.4915C17.273 2.90494 14.6586 0 11.4307 0C8.20278 0 5.58833 2.90494 5.58833 6.4915C5.58833 10.078 8.20278 12.983 11.4307 12.983Z"
+                fill="#8E8E93" />
+        </svg>
+
+        <div class="logo">Logo</div>
+    </div>
+    <div class="list">
+        <div class="list-background"></div>
+        <div class="card-list" id="card-list">
+
+        </div>
+        <div class="label">추천 식당 Top 5</div>
+    </div>
+
+    <div class="mobile-screen">
+        <iframe src="" id="mobile-screen"></iframe>
+
+    </div>
+
+
+
+
+    <div id="map" style="width:100%;height:900px;"></div>
+
+    <script>
+        var mapOptions = {
+            center: new naver.maps.LatLng(37.54717358, 126.9226573),
+            zoom: 17, //지도의 초기 줌 레벨
+            minZoom: 7, //지도의 최소 줌 레벨
+            zoomControl: true, //줌 컨트롤의 표시 여부
+            zoomControlOptions: { //줌 컨트롤의 옵션
+                position: naver.maps.Position.TOP_RIGHT
+            }
+        };
+        var map = new naver.maps.Map('map', mapOptions);
+        const fetchData = async () => {
+            try {
+                const apiUrl = 'http://localhost:3000/restaurant';
+                const response = await fetch(apiUrl);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                // 'lon', 'lat', 'Kakao_Ratings', 'Predicted_Ratings' 필드만 추출하여 배열에 저장
+                const extractedDataArray = data.map(entry => ({
+                    name: entry.name,
+                    lon: entry.lon,
+                    lat: entry.lat,
+                    cate_1: entry.cate_1,
+                    cate_2: entry.cate_2,
+                    Kakao_Ratings: entry.Kakao_Ratings,
+                    Predicted_Ratings: entry.Predicted_Ratings,
+                    naver_map_url: entry.naver_map_url
+                }));
+
+                // 변수에 저장
+                window.extractedData = extractedDataArray;
+
+                var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(parseFloat(37.54717358), parseFloat(126.9226573)),
+                    map: map
+                });
+                return extractedDataArray;
+            } catch (error) {
+                console.error('Error fetching data:', error.message);
+            }
+        };
+
+        fetchData().then(data => {
+            // HTML에 데이터 삽입
+            //const jsonDataContainer = document.getElementById('jsonData');
+            //jsonDataContainer.textContent = JSON.stringify(data, null, 2);
+            // lon과 lat을 추출하여 새로운 배열 생성
+            const lonLatArray = data.map(entry => ({
+                lon: entry.lon,
+                lat: entry.lat
+            }));
+
+            // 마커 배열
+            var markers = [];
+            // 좌표 배열을 반복하며 마커 생성 및 지도에 표시
+            for (var i = 0; i < lonLatArray.length; i++) {
+                var lonLat = lonLatArray[i];
+                var marker = new naver.maps.Marker({
+                    position: new naver.maps.LatLng(parseFloat(lonLat.lon), parseFloat(lonLat.lat)),
+                    map: map,
+                    zIndex: 999,
+                });
+                markers.push(marker);
+
+            }
+
+            const infoWindows = [];
+
+            for (let i = 0; i < data.length; i++) {
+                const infoWindow = new naver.maps.InfoWindow({
+                    content: [
+                        '<div style="padding: 10px; box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px 0px;">',
+                        `   <div style="font-weight: bold; margin-bottom: 5px;">${data[i].name}</div>`,
+                        `   <div>카카오 별점:\t ${data[i].Kakao_Ratings}</div>`,
+                        `   <div>네이버 예측 별점: ${data[i].Predicted_Ratings}</div>`,
+                        "</div>",
+                    ].join(""),
+                    maxWidth: 300,
+                    anchorSize: {
+                        width: 12,
+                        height: 14,
+                    },
+                    borderColor: "#cecdc7",
+                });
+
+                // Create a function to capture the correct value of i
+                const handleClick = (index) => () => {
+                    // mobile-screen의 src 변경
+                    console.log(`InfoWindow Clicked for index ${i}`);
+                    const timestamp = new Date().getTime();
+                    const newUrl = `${data[i].naver_map_url}?timestamp=${timestamp}`;
+                    document.getElementById('mobile-screen').src = newUrl;
+                };
+
+                naver.maps.Event.addListener(infoWindow, 'click', handleClick(i));
+
+                // infoWindow를 배열에 추가
+                infoWindows.push(infoWindow);
+            }
+
+            // 나머지 마커의 인덱스를 클로저 변수로 저장하는 이벤트 핸들러를 리턴하는 함수
+            const getClickHandler = (map, infoWindows, markers, index) => {
+                return () => {
+                    if (infoWindows[index].getMap()) {
+                        infoWindows[index].close();
+                    } else if (map !== null) {
+                        const timestamp = new Date().getTime();
+                        const newUrl = `${data[index].naver_map_url}?timestamp=${timestamp}`;
+                        document.getElementById('mobile-screen').src = newUrl;
+                        infoWindows[index].open(map, markers[index]);
+                    }
+                };
+            };
+
+            for (let i = 0; i < markers.length; i++) {
+                naver.maps.Event.addListener(
+                    markers[i],
+                    "click",
+                    getClickHandler(map, infoWindows, markers, i)
+                );
+            }
+
+            /*
+            for (let i = 0; i < infoWindows.length; i++) {
+                naver.maps.Event.addListener(
+                    infoWindows[i],
+                    "click",
+                    () => { document.getElementById('mobile-screen').src = data[i].naver_map_url; }
+                );
+            }
+            */
+
+            /// HTML 문자열을 누적할 변수
+            let htmlString = '';
+
+            // data 배열을 순회하며 각각의 레스토랑 데이터를 처리합니다.
+            data.slice(0, 5).forEach(entry => {
+                // HTML 문자열을 누적
+                htmlString += `
+        <div class="restaurant">
+
+    <img class="thumbnails" src="https://search.pstatic.net/common/?autoRotate=true&amp;quality=95&amp;type=f160_160&amp;src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20230801_140%2F1690872158587xJD7A_JPEG%2F%25C0%25CC%25BF%25A1%25C4%25C9%25B6%25F3%25B8%25E0_1.jpg" alt="라멘트럭 상수본점" width="88" height="88" data-grid-lazy="false">
+
+  <div class="detail">
+    <div class="name">${entry.name}</div>
+    <div class="ratings">
+      <svg
+        class="star"
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.24888 2.54881C7.8358 1.60484 9.20967 1.60484 9.79659 2.54881L11.0561 4.57456C11.2626 4.90669 11.5907 5.14504 11.9703 5.2388L14.2862 5.81068C15.3653 6.07716 15.7899 7.3838 15.0734 8.23369L13.5361 10.0576C13.284 10.3566 13.1587 10.7422 13.1868 11.1323L13.3586 13.5115C13.4386 14.6202 12.3271 15.4277 11.2974 15.009L9.08777 14.1105C8.72548 13.9631 8.31999 13.9631 7.95771 14.1105L5.74803 15.009C4.71835 15.4277 3.60686 14.6202 3.68689 13.5115L3.85863 11.1323C3.88678 10.7422 3.76148 10.3566 3.50942 10.0576L1.97203 8.23369C1.25562 7.3838 1.68017 6.07716 2.75931 5.81068L5.07513 5.2388C5.45481 5.14504 5.78287 4.90669 5.98937 4.57456L7.24888 2.54881Z"
+          fill="#F6C002"
+        />
+      </svg>
+
+      <div class="rating" id="kakao">${entry.Kakao_Ratings}</div>
+      <svg
+        class="star"
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M7.24888 2.54881C7.8358 1.60484 9.20967 1.60484 9.79659 2.54881L11.0561 4.57456C11.2626 4.90669 11.5907 5.14504 11.9703 5.2388L14.2862 5.81068C15.3653 6.07716 15.7899 7.3838 15.0734 8.23369L13.5361 10.0576C13.284 10.3566 13.1587 10.7422 13.1868 11.1323L13.3586 13.5115C13.4386 14.6202 12.3271 15.4277 11.2974 15.009L9.08777 14.1105C8.72548 13.9631 8.31999 13.9631 7.95771 14.1105L5.74803 15.009C4.71835 15.4277 3.60686 14.6202 3.68689 13.5115L3.85863 11.1323C3.88678 10.7422 3.76148 10.3566 3.50942 10.0576L1.97203 8.23369C1.25562 7.3838 1.68017 6.07716 2.75931 5.81068L5.07513 5.2388C5.45481 5.14504 5.78287 4.90669 5.98937 4.57456L7.24888 2.54881Z"
+          fill="#F6C002"
+        />
+      </svg>
+
+      <div class="rating" id="predicted">${entry.Predicted_Ratings.toFixed(2)}</div>
+    </div>
+    <div class="menu">${entry.cate_1}, ${entry.cate_2}</div>
+  </div>
+</div>
+    `;
+            });
+
+            // 최종적으로 innerHTML에 HTML 문자열을 설정
+            document.getElementById('card-list').innerHTML = htmlString;
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>
